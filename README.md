@@ -1,65 +1,52 @@
-# Student-Management-System-Using-SpringBoot-React
+# Course Feedback System
 
-
-Welcome to the Student management System! This project consists of both frontend and backend components to facilitate Student Management , Add Students , Edit information such functions.
-
-## Table of Contents
-- [Introduction](#introduction)
-- [Technologies Used](#technologies-used)
-- [Features](#features)
-- [Setup Instructions](#setup-instructions)
-- [API Documentation](#api-documentation)
-- [Contributing](#contributing)
-
-## Introduction
-The Student management System comprises a frontend built with React.js and a backend developed using Java with Spring Boot. It provides users with an intuitive interface for searching Students, Adding Students, and managing their information. The backend offers RESTful APIs for adding , removing students and more.
-
-## Technologies Used
-### Frontend
-- React.js
-- React Router
-- Bootstrap
-- Axios
-
-
-### Backend
-- Java
-- Spring Boot
-- Spring Data JPA
-- MySQL
-- Maven
+## Overview
+The Course Feedback System is a web application designed to facilitate the collection and analysis of feedback from students regarding their courses and instructors. This system allows students to submit anonymous feedback, enables administrators to create and distribute feedback forms, and provides instructors with summarized results to improve their teaching methods.
 
 ## Features
-- **User Authentication:** Secure sign up, login, and logout functionalities.
-- **Student Search:** Search for students in the database.
-- **Student Addition:** Add new Students to the database.
-- **Student Deletion:** Delete Student from the database.
-  
+- **Anonymous Feedback Submission**: Students can fill out feedback forms without revealing their identities.
+- **Admin Controls**: Administrators can create and manage feedback forms, including defining questions and settings.
+- **Instructor Dashboard**: Instructors can view summarized feedback results for their courses and analyze ratings.
+- **Course and Instructor Ratings**: Users can view ratings and feedback per course or instructor.
+- **Export Functionality**: Feedback summaries can be exported in various formats for reporting purposes.
 
-## Setup Instructions
-### Frontend
-1. Clone the repository: `git clone <frontend-repository-url>`
-2. Navigate to the project directory: `cd BusBookingSystemFrontend`
-3. Install dependencies: `npm install`
-4. Run the application:
-   - For frontend UI: `npm start`
-5. Access the application at http://localhost:3000 for the frontend UI.
+## Project Structure
+The project is divided into two main parts: the backend and the frontend.
 
 ### Backend
-1. Clone the repository: `git clone <backend-repository-url>`
-2. Navigate to the project directory: `cd StudentBackend`
-3. Configure your database settings in `application.properties`.
-4. Build and run the application: `mvn spring-boot:run`
-5. Access the application at http://localhost:8080.
+- **Java Spring Boot**: The backend is built using Spring Boot, providing RESTful APIs for the frontend to interact with.
+- **Security**: Configured with security settings to manage authentication and authorization.
+- **Data Models**: Includes models for Course, FeedbackForm, FeedbackResponse, Instructor, and User.
+- **Repositories**: Data access layers for managing entities.
+- **Services**: Business logic for handling feedback and user management.
 
-## API Documentation
-Detailed API documentation can be found in the `apidoc.txt` file in the project repository. 
+### Frontend
+- **React**: The frontend is developed using React, providing a dynamic user interface.
+- **Components**: Organized into admin, instructor, and student components for specific functionalities.
+- **Routing**: Utilizes React Router for navigation between different pages.
+- **API Integration**: Communicates with the backend through defined API services.
+
+## Getting Started
+To run the Course Feedback System locally, follow these steps:
+
+### Prerequisites
+- Java JDK 11 or higher
+- Node.js and npm
+- Maven
+
+### Backend Setup
+1. Navigate to the `backend` directory.
+2. Run `mvn clean install` to build the project.
+3. Configure the `application.properties` file for your database settings.
+4. Start the Spring Boot application using `mvn spring-boot:run`.
+
+### Frontend Setup
+1. Navigate to the `frontend` directory.
+2. Run `npm install` to install the required dependencies.
+3. Start the React application using `npm start`.
 
 ## Contributing
-Contributions are welcome! To contribute to the project, follow these steps:
-1. Fork the repository.
-2. Create your feature branch: `git checkout -b feature/YourFeature`.
-3. Commit your changes: `git commit -m 'Add YourFeature'`.
-4. Push to the branch: `git push origin feature/YourFeature`.
-5. Open a pull request adhering to the project's coding conventions and including relevant tests if applicable.
+Contributions are welcome! Please submit a pull request or open an issue for any enhancements or bug fixes.
 
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
