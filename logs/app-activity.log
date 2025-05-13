@@ -1,0 +1,11 @@
+2025-05-13T15:56:16.683+03:00  INFO 5576 --- [Course Feedback System] [restartedMain] c.c.CourseFeedbackSystemApplication      : Starting CourseFeedbackSystemApplication using Java 21.0.7 with PID 5576 (C:\Users\rebelli0n\Downloads\course-feedback\course-feedback\target\classes started by rebelli0n in C:\Users\rebelli0n\Downloads\course-feedback)
+2025-05-13T15:56:16.689+03:00  INFO 5576 --- [Course Feedback System] [restartedMain] c.c.CourseFeedbackSystemApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-05-13T15:56:20.845+03:00  INFO 5576 --- [Course Feedback System] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-13T15:56:21.045+03:00  INFO 5576 --- [Course Feedback System] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 193 ms. Found 8 JPA repository interfaces.
+2025-05-13T15:56:22.952+03:00  INFO 5576 --- [Course Feedback System] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-13T15:56:22.954+03:00  INFO 5576 --- [Course Feedback System] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-13T15:56:22.954+03:00  INFO 5576 --- [Course Feedback System] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-13T15:56:23.222+03:00  INFO 5576 --- [Course Feedback System] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-13T15:56:23.223+03:00  INFO 5576 --- [Course Feedback System] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6527 ms
+2025-05-13T15:56:23.340+03:00  INFO 5576 --- [Course Feedback System] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-13T15:56:23.344+03:00  INFO 5576 --- [Course Feedback System] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
