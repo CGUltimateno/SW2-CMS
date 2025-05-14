@@ -28,16 +28,22 @@ const Header = () => {
             <nav className="nav">
                 {isLoggedIn && (
                     <>
-                        {/* Show links based on user role */}
-                        {userRole === 'STUDENT' && (
-                            <Link to="/student-feedback">Submit Feedback</Link>
-                        )}
+                        {userRole === 'ROLE_USER' && (
+  <>
+    <li className="nav-item">
+      <Link to="/dashboard" className="nav-link">My Courses</Link>
+    </li>
+    <li className="nav-item">
+      <Link to="/feedback" className="nav-link">My Feedback</Link>
+    </li>
+  </>
+)}
                         
-                        {userRole === 'ADMIN' && (
+                        {userRole === 'ROLE_ADMIN' && (
                             <Link to="/admin">Admin Dashboard</Link>
                         )}
                         
-                        {userRole === 'INSTRUCTOR' && (
+                        {userRole === 'ROLE_INSTRUCTOR' && (
                             <Link to="/instructor">Instructor Dashboard</Link>
                         )}
                         
